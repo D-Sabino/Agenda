@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\agenda\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\agenda\\frmcadastrocontato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\frmcadastrocontato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contato.cs",
+              "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\Contato.cs",
+              "RelativeDocumentMoniker": "Agenda\\Contato.cs",
+              "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\Contato.cs",
+              "RelativeToolTip": "Agenda\\Contato.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwBsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T10:19:48.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmPrincipal.cs",
+              "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "Agenda\\frmPrincipal.cs",
+              "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmPrincipal.cs",
+              "RelativeToolTip": "Agenda\\frmPrincipal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T09:51:38.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmCadastroContato.cs [Projeto]",
+              "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmCadastroContato.cs",
+              "RelativeDocumentMoniker": "Agenda\\frmCadastroContato.cs",
+              "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmCadastroContato.cs [Projeto]",
+              "RelativeToolTip": "Agenda\\frmCadastroContato.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T09:50:08.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmPrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "Agenda\\frmPrincipal.cs",
+              "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmPrincipal.cs [Projeto]",
+              "RelativeToolTip": "Agenda\\frmPrincipal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T09:37:41.687Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
