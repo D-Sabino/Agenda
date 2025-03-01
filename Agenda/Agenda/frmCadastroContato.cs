@@ -98,7 +98,18 @@ namespace Agenda
 
             if (this.operacao == "inserir")
             {
-                //Realizar INSERT na base de dados.
+                String strConexao = "Host=localhost;Port=5432;Database=Agenda;Username=postgres;Password=1234;";
+                Conexao conexao = new Conexao(strConexao);
+
+                try
+                {
+                    conexao.Conectar();
+                }
+                catch(Exception erro)
+                {
+                    MessageBox.Show(erro.Message);
+                }
+
             }
             else
             {

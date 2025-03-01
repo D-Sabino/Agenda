@@ -16,3 +16,9 @@ C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\refint\
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.pdb
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.genruntimeconfig.cache
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\ref\Agenda.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\Dapper.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.csproj.AssemblyReference.cache
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.csproj.Up2Date
