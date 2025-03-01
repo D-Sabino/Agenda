@@ -46,6 +46,20 @@ namespace Agenda
 
         }
 
+        public void LimpaCampos()
+        {
+            txtCodigo.Clear();
+            txtNome.Clear();
+            txtEndereco.Clear();
+            txtBairro.Clear();
+            txtCidade.Clear();
+            txtCep.Clear();
+            txtCidade.Clear();
+            txtEstado.Clear();
+            txtEmail.Clear();
+            txtTelefone.Clear();
+
+        }
         public frmCadastroContato()
         {
             InitializeComponent();
@@ -66,7 +80,32 @@ namespace Agenda
         private void btCancelar_Click(object sender, EventArgs e)
         {
             this.AlteraBotoes(1);
-            //Implementar limpeza dos campos.
+            this.LimpaCampos();
+        }
+
+        private void btSalvar_Click(object sender, EventArgs e)
+        {
+            Contato contato = new Contato();
+            contato.Nome = txtNome.Text;
+            contato.Rua = txtEndereco.Text;
+            contato.Bairro = txtBairro.Text;
+            contato.Cidade = txtCidade.Text;
+            contato.Cep = txtCep.Text;
+            contato.Estado = txtEstado.Text;
+            contato.Telefone = txtTelefone.Text;
+            contato.Email = txtEmail.Text;
+
+
+            if (this.operacao == "inserir")
+            {
+                //Realizar INSERT na base de dados.
+            }
+            else
+            {
+                contato.Codigo = Convert.ToInt32(txtCodigo.Text);
+                
+                //Alterar contato que está sendo exibido em tela.
+            }
         }
     }
 }

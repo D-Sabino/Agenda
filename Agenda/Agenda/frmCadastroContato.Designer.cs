@@ -258,6 +258,7 @@
             btSalvar.TabIndex = 4;
             btSalvar.Text = "Salvar";
             btSalvar.UseVisualStyleBackColor = true;
+            btSalvar.Click += btSalvar_Click;
             // 
             // btExcluir
             // 
