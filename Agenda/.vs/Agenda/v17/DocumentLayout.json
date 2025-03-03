@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\dalcontato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\dalcontato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\frmcadastrocontato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\frmcadastrocontato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\agenda\\frmcadastrocontato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\frmcadastrocontato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|solutionrelative:agenda\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A915AAA-2D9B-4BBE-93B6-7B9DEBDB842B}|Agenda\\Agenda.csproj|c:\\projetos\\youtube-agenda\\agenda\\agenda\\agenda\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,15 +43,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DALContato.cs",
+              "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\DALContato.cs",
+              "RelativeDocumentMoniker": "Agenda\\DALContato.cs",
+              "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\DALContato.cs",
+              "RelativeToolTip": "Agenda\\DALContato.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowEsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T16:50:10.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Conexao.cs",
               "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\Conexao.cs",
               "RelativeDocumentMoniker": "Agenda\\Conexao.cs",
               "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\Conexao.cs",
               "RelativeToolTip": "Agenda\\Conexao.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAjwD4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAMwA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:30:33.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T11:30:33.367Z"
             },
             {
               "$type": "Document",
@@ -57,14 +73,14 @@
               "RelativeDocumentMoniker": "Agenda\\frmCadastroContato.cs",
               "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmCadastroContato.cs",
               "RelativeToolTip": "Agenda\\frmCadastroContato.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAD4v2QAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA2wBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T09:32:25.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Contato.cs",
               "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\Contato.cs",
               "RelativeDocumentMoniker": "Agenda\\Contato.cs",
@@ -72,12 +88,11 @@
               "RelativeToolTip": "Agenda\\Contato.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:19:48.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T10:19:48.853Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmPrincipal.cs",
               "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmPrincipal.cs",
               "RelativeDocumentMoniker": "Agenda\\frmPrincipal.cs",
@@ -97,20 +112,18 @@
               "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmCadastroContato.cs [Projeto]",
               "RelativeToolTip": "Agenda\\frmCadastroContato.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T09:50:08.73Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-02-26T09:50:08.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "frmPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmPrincipal.cs",
               "RelativeDocumentMoniker": "Agenda\\frmPrincipal.cs",
               "ToolTip": "C:\\Projetos\\youtube-agenda\\Agenda\\Agenda\\Agenda\\frmPrincipal.cs [Design]",
               "RelativeToolTip": "Agenda\\frmPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T09:37:41.687Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-26T09:37:41.687Z"
             }
           ]
         }

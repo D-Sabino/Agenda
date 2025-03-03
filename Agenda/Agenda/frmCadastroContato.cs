@@ -27,6 +27,7 @@ namespace Agenda
             switch (op)
             {
                 case 1:
+                    txtCodigo.Enabled = false;
                     btInserir.Enabled = true;
                     btLocalizar.Enabled = true;
                     break;
@@ -95,20 +96,14 @@ namespace Agenda
             contato.Telefone = txtTelefone.Text;
             contato.Email = txtEmail.Text;
 
+            String strConexao = "Host=localhost;Port=5432;Database=Agenda;Username=postgres;Password=1234;";
+            Conexao conexao = new Conexao(strConexao);
+            DALContato dal = new DALContato(conexao);
 
             if (this.operacao == "inserir")
             {
-                String strConexao = "Host=localhost;Port=5432;Database=Agenda;Username=postgres;Password=1234;";
-                Conexao conexao = new Conexao(strConexao);
-
-                try
-                {
-                    conexao.Conectar();
-                }
-                catch(Exception erro)
-                {
-                    MessageBox.Show(erro.Message);
-                }
+                dal.Incluir(contato);
+                MessageBox.Show("O código gerado foi:" + contato.Codigo.ToString());
 
             }
             else
