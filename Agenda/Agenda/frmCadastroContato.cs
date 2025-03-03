@@ -96,7 +96,7 @@ namespace Agenda
             contato.Telefone = txtTelefone.Text;
             contato.Email = txtEmail.Text;
 
-            String strConexao = "Host=localhost;Port=5432;Database=Agenda;Username=postgres;Password=1234;";
+            String strConexao = DadosConexao.StringDeConexao;
             Conexao conexao = new Conexao(strConexao);
             DALContato dal = new DALContato(conexao);
 
@@ -109,9 +109,14 @@ namespace Agenda
             else
             {
                 contato.Codigo = Convert.ToInt32(txtCodigo.Text);
-                
-                //Alterar contato que está sendo exibido em tela.
+                dal.Alterar(contato);
             }
+        }
+
+        private void btLocalizar_Click(object sender, EventArgs e)
+        {
+            frmConsultaContatos f = new frmConsultaContatos();
+            f.ShowDialog();
         }
     }
 }

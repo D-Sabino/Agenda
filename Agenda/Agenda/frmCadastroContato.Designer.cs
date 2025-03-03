@@ -286,6 +286,7 @@
             btLocalizar.TabIndex = 1;
             btLocalizar.Text = "Localizar";
             btLocalizar.UseVisualStyleBackColor = true;
+            btLocalizar.Click += btLocalizar_Click;
             // 
             // btInserir
             // 

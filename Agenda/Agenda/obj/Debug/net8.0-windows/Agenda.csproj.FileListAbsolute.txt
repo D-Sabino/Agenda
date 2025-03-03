@@ -22,3 +22,4 @@ C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\Microso
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\Npgsql.dll
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.csproj.AssemblyReference.cache
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.csproj.Up2Date
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.frmConsultaContatos.resources
