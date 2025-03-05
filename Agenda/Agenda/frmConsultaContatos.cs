@@ -12,6 +12,7 @@ namespace Agenda
 {
     public partial class frmConsultaContatos : Form
     {
+        public int codigo = 0;
         public frmConsultaContatos()
         {
             InitializeComponent();
@@ -23,6 +24,15 @@ namespace Agenda
             DALContato dal = new DALContato(cx);
 
             dgDados.DataSource = dal.Localizar(txtValor.Text);
+        }
+
+        private void dgDados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex > 0)
+            {
+                this.codigo = Convert.ToInt32(dgDados.Rows[e.RowIndex].Cells[0].Value);
+                this.Close();
+            }
         }
     }
 }

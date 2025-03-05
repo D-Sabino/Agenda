@@ -73,6 +73,7 @@
             dgDados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgDados.Size = new Size(758, 476);
             dgDados.TabIndex = 3;
+            dgDados.CellDoubleClick += dgDados_CellDoubleClick;
             // 
             // frmConsultaContatos
             // 

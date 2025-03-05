@@ -23,3 +23,8 @@ C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\Npgsql.
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.csproj.AssemblyReference.cache
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.csproj.Up2Date
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.frmConsultaContatos.resources
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.Composition.AttributedModel.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.Composition.Convention.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll

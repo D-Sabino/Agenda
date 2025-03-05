@@ -110,13 +110,60 @@ namespace Agenda
             {
                 contato.Codigo = Convert.ToInt32(txtCodigo.Text);
                 dal.Alterar(contato);
+                MessageBox.Show("Registro alterado com sucesso.");
             }
+            this.AlteraBotoes(1);
+            this.LimpaCampos();
         }
 
         private void btLocalizar_Click(object sender, EventArgs e)
         {
             frmConsultaContatos f = new frmConsultaContatos();
             f.ShowDialog();
+
+            if (f.codigo != 0)
+            {
+                Conexao cx = new Conexao(DadosConexao.StringDeConexao);
+                DALContato dal = new DALContato(cx);
+                Contato contato = dal.CarregaContato(f.codigo);
+
+                txtCodigo.Text = contato.Codigo.ToString();
+                txtNome.Text = contato.Nome;
+                txtEndereco.Text = contato.Rua;
+                txtEmail.Text = contato.Email;
+                txtTelefone.Text = contato.Telefone;
+                txtBairro.Text = contato.Bairro;
+                txtCidade.Text = contato.Cidade;
+                txtEstado.Text = contato.Estado;
+                txtCep.Text = contato.Cep;
+
+                this.AlteraBotoes(3);
+            }
+            else
+            {
+                this.LimpaCampos();
+                this.AlteraBotoes(1);
+            }
+            f.Dispose();
+        }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+            this.operacao = "alterar";
+            this.AlteraBotoes(2);
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Deseja realmente excluir o registro?", "Aviso", MessageBoxButtons.YesNo);
+            if (d.ToString() == "Yes")
+            {
+                Conexao cx = new Conexao(DadosConexao.StringDeConexao);
+                DALContato dal = new DALContato(cx);
+                dal.Excluir(Convert.ToInt32(txtCodigo.Text));
+                this.LimpaCampos();
+                this.AlteraBotoes(1);
+            }
         }
     }
 }

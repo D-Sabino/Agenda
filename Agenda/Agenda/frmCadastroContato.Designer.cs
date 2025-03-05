@@ -268,6 +268,7 @@
             btExcluir.TabIndex = 3;
             btExcluir.Text = "Excluir";
             btExcluir.UseVisualStyleBackColor = true;
+            btExcluir.Click += btExcluir_Click;
             // 
             // btAlterar
             // 
@@ -277,6 +278,7 @@
             btAlterar.TabIndex = 2;
             btAlterar.Text = "Alterar";
             btAlterar.UseVisualStyleBackColor = true;
+            btAlterar.Click += btAlterar_Click;
             // 
             // btLocalizar
             // 

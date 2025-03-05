@@ -87,11 +87,39 @@ namespace Agenda
         public DataTable Localizar(String valor)
         {
             DataTable tabela = new DataTable();
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter("SELECT * FROM CONTATO WHERE con_nome LIKE '%" + valor + "%'", objConexao.Connection);
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter("SELECT * FROM CONTATO WHERE con_nome LIKE '%" + valor + "%'", DadosConexao.StringDeConexao);
 
             da.Fill(tabela);
             return tabela;
         }
 
+        public Contato CarregaContato(int codigo)
+        {
+            Contato contato = new Contato();
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = objConexao.Connection;
+
+            cmd.CommandText = "SELECT * FROM CONTATO WHERE con_cod = @codigo;";
+            cmd.Parameters.AddWithValue("@codigo", codigo);
+            objConexao.Conectar();
+            NpgsqlDataReader registro = cmd.ExecuteReader();
+
+            if (registro.HasRows)
+            {
+                registro.Read();
+                contato.Codigo = Convert.ToInt32(registro["con_cod"]);
+                contato.Nome = registro["con_nome"] as string ?? string.Empty;
+                contato.Email = registro["con_email"] as string ?? string.Empty;
+                contato.Telefone = registro["con_fone"] as string ?? string.Empty;
+                contato.Rua = registro["con_rua"] as string ?? string.Empty;
+                contato.Bairro = registro["con_bairro"] as string ?? string.Empty;
+                contato.Cidade = registro["con_cidade"] as string ?? string.Empty;
+                contato.Estado = registro["con_estado"] as string ?? string.Empty;
+                contato.Cep = registro["con_cep"] as string ?? string.Empty;
+            }
+        
+            objConexao.Desconectar();
+            return contato;
+        }
     }
 }

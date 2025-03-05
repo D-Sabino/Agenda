@@ -39,7 +39,7 @@ namespace Agenda
                 if (_connection.State == ConnectionState.Closed)
                 {
                     _connection.Open();
-                    MessageBox.Show("Conexão aberta com sucesso.");
+                    //MessageBox.Show("Conexão aberta com sucesso.");
                 }
             }
             catch (Exception ex)
@@ -55,7 +55,7 @@ namespace Agenda
                 if (_connection.State == ConnectionState.Open)
                 {
                     _connection.Close();
-                    MessageBox.Show("Conexão fechada com sucesso.");
+                    //MessageBox.Show("Conexão fechada com sucesso.");
                 }
             }
             catch (Exception ex)
