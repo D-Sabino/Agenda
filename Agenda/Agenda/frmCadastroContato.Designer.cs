@@ -242,61 +242,61 @@
             // 
             // btCancelar
             // 
-            btCancelar.Location = new Point(503, 9);
+            btCancelar.Image = Properties.Resources.Cancelar100x100;
+            btCancelar.Location = new Point(636, 14);
             btCancelar.Name = "btCancelar";
-            btCancelar.Size = new Size(94, 29);
+            btCancelar.Size = new Size(100, 100);
             btCancelar.TabIndex = 5;
-            btCancelar.Text = "Cancelar";
             btCancelar.UseVisualStyleBackColor = true;
             btCancelar.Click += btCancelar_Click;
             // 
             // btSalvar
             // 
-            btSalvar.Location = new Point(403, 9);
+            btSalvar.Image = Properties.Resources.Salvar100x100;
+            btSalvar.Location = new Point(436, 14);
             btSalvar.Name = "btSalvar";
-            btSalvar.Size = new Size(94, 29);
+            btSalvar.Size = new Size(100, 100);
             btSalvar.TabIndex = 4;
-            btSalvar.Text = "Salvar";
             btSalvar.UseVisualStyleBackColor = true;
             btSalvar.Click += btSalvar_Click;
             // 
             // btExcluir
             // 
-            btExcluir.Location = new Point(303, 9);
+            btExcluir.Image = Properties.Resources.Excluir100x100;
+            btExcluir.Location = new Point(330, 14);
             btExcluir.Name = "btExcluir";
-            btExcluir.Size = new Size(94, 29);
+            btExcluir.Size = new Size(100, 100);
             btExcluir.TabIndex = 3;
-            btExcluir.Text = "Excluir";
             btExcluir.UseVisualStyleBackColor = true;
             btExcluir.Click += btExcluir_Click;
             // 
             // btAlterar
             // 
-            btAlterar.Location = new Point(203, 9);
+            btAlterar.Image = Properties.Resources.Alterar100x100;
+            btAlterar.Location = new Point(224, 14);
             btAlterar.Name = "btAlterar";
-            btAlterar.Size = new Size(94, 29);
+            btAlterar.Size = new Size(100, 100);
             btAlterar.TabIndex = 2;
-            btAlterar.Text = "Alterar";
             btAlterar.UseVisualStyleBackColor = true;
             btAlterar.Click += btAlterar_Click;
             // 
             // btLocalizar
             // 
-            btLocalizar.Location = new Point(103, 9);
+            btLocalizar.Image = Properties.Resources.Localizar100x100;
+            btLocalizar.Location = new Point(118, 14);
             btLocalizar.Name = "btLocalizar";
-            btLocalizar.Size = new Size(94, 29);
+            btLocalizar.Size = new Size(100, 100);
             btLocalizar.TabIndex = 1;
-            btLocalizar.Text = "Localizar";
             btLocalizar.UseVisualStyleBackColor = true;
             btLocalizar.Click += btLocalizar_Click;
             // 
             // btInserir
             // 
-            btInserir.Location = new Point(3, 9);
+            btInserir.Image = Properties.Resources.Inserir100x100;
+            btInserir.Location = new Point(12, 14);
             btInserir.Name = "btInserir";
-            btInserir.Size = new Size(94, 29);
+            btInserir.Size = new Size(100, 100);
             btInserir.TabIndex = 0;
-            btInserir.Text = "Inserir";
             btInserir.UseVisualStyleBackColor = true;
             btInserir.Click += btInserir_Click;
             // 

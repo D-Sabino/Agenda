@@ -68,7 +68,26 @@ namespace Agenda
 
         private void frmCadastroContato_Load(object sender, EventArgs e)
         {
+            carregaImagens();
             this.AlteraBotoes(1);
+        }
+
+        public void carregaImagens()
+        {
+            btInserir.Image = Properties.Resources.Inserir100x100;
+            btLocalizar.Image = Properties.Resources.Localizar100x100;
+            btAlterar.Image = Properties.Resources.Alterar100x100;
+            btExcluir.Image = Properties.Resources.Excluir100x100;
+            btSalvar.Image = Properties.Resources.Salvar100x100;
+            btCancelar.Image = Properties.Resources.Cancelar100x100;
+
+            btInserir.Image = new Bitmap(Properties.Resources.Inserir100x100, new Size(100, 100));
+            btLocalizar.Image = new Bitmap(Properties.Resources.Localizar100x100, new Size(100, 100));
+            btAlterar.Image = new Bitmap(Properties.Resources.Alterar100x100, new Size(100, 100));
+            btExcluir.Image = new Bitmap(Properties.Resources.Excluir100x100, new Size(100, 100));
+            btSalvar.Image = new Bitmap(Properties.Resources.Salvar100x100, new Size(100, 100));
+            btCancelar.Image = new Bitmap(Properties.Resources.Cancelar100x100, new Size(100, 100));
+
         }
 
         private void btInserir_Click(object sender, EventArgs e)

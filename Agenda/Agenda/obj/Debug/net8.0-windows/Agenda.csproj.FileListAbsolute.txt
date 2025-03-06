@@ -28,3 +28,4 @@ C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
 C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll
+C:\Projetos\youtube-agenda\Agenda\Agenda\Agenda\obj\Debug\net8.0-windows\Agenda.Properties.Resources.resources
