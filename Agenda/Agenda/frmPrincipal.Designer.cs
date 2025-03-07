@@ -33,6 +33,7 @@
             // 
             // btContato
             // 
+            btContato.Font = new Font("Open Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btContato.Location = new Point(12, 12);
             btContato.Name = "btContato";
             btContato.Size = new Size(161, 73);

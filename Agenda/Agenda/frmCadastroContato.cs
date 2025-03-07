@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,23 +25,38 @@ namespace Agenda
             btSalvar.Enabled = false;
             btCancelar.Enabled = false;
 
+            lblInserir.Enabled = false;
+            lblLocalizar.Enabled = false;
+            lblAlterar.Enabled = false;
+            lblExcluir.Enabled = false;
+            lblSalvar.Enabled = false;
+            lblCancelar.Enabled = false;
+
             switch (op)
             {
                 case 1:
                     txtCodigo.Enabled = false;
                     btInserir.Enabled = true;
                     btLocalizar.Enabled = true;
+                    lblInserir.Enabled = true;
+                    lblLocalizar.Enabled = true;
                     break;
 
                 case 2:
                     pDados.Enabled = true;
                     btSalvar.Enabled = true;
                     btCancelar.Enabled = true;
+                    lblSalvar.Enabled = true;
+                    lblCancelar.Enabled = true;
                     break;
 
                 case 3:
                     btExcluir.Enabled = true;
                     btAlterar.Enabled = true;
+                    lblAlterar.Enabled = true;
+                    lblExcluir.Enabled = true;
+                    btCancelar.Enabled = true;
+                    lblCancelar.Enabled = true;
                     break;
 
             }
@@ -81,12 +97,12 @@ namespace Agenda
             btSalvar.Image = Properties.Resources.Salvar100x100;
             btCancelar.Image = Properties.Resources.Cancelar100x100;
 
-            btInserir.Image = new Bitmap(Properties.Resources.Inserir100x100, new Size(100, 100));
-            btLocalizar.Image = new Bitmap(Properties.Resources.Localizar100x100, new Size(100, 100));
-            btAlterar.Image = new Bitmap(Properties.Resources.Alterar100x100, new Size(100, 100));
-            btExcluir.Image = new Bitmap(Properties.Resources.Excluir100x100, new Size(100, 100));
-            btSalvar.Image = new Bitmap(Properties.Resources.Salvar100x100, new Size(100, 100));
-            btCancelar.Image = new Bitmap(Properties.Resources.Cancelar100x100, new Size(100, 100));
+            btInserir.Image = new Bitmap(Properties.Resources.Inserir100x100, new Size(90, 90));
+            btLocalizar.Image = new Bitmap(Properties.Resources.Localizar100x100, new Size(90, 90));
+            btAlterar.Image = new Bitmap(Properties.Resources.Alterar100x100, new Size(90, 90));
+            btExcluir.Image = new Bitmap(Properties.Resources.Excluir100x100, new Size(90, 90));
+            btSalvar.Image = new Bitmap(Properties.Resources.Salvar100x100, new Size(90, 90));
+            btCancelar.Image = new Bitmap(Properties.Resources.Cancelar100x100, new Size(90, 90));
 
         }
 
@@ -105,35 +121,130 @@ namespace Agenda
 
         private void btSalvar_Click(object sender, EventArgs e)
         {
-            Contato contato = new Contato();
-            contato.Nome = txtNome.Text;
-            contato.Rua = txtEndereco.Text;
-            contato.Bairro = txtBairro.Text;
-            contato.Cidade = txtCidade.Text;
-            contato.Cep = txtCep.Text;
-            contato.Estado = txtEstado.Text;
-            contato.Telefone = txtTelefone.Text;
-            contato.Email = txtEmail.Text;
-
-            String strConexao = DadosConexao.StringDeConexao;
-            Conexao conexao = new Conexao(strConexao);
-            DALContato dal = new DALContato(conexao);
-
-            if (this.operacao == "inserir")
+            try
             {
-                dal.Incluir(contato);
-                MessageBox.Show("O código gerado foi:" + contato.Codigo.ToString());
+                if (string.IsNullOrWhiteSpace(txtNome.Text))
+                {
+                    MessageBox.Show("O campo NOME é obrigatório!");
+                    return;
+                }
+                if (!Regex.IsMatch(txtNome.Text, "^[a-zA-ZÀ-ÿ ]+$"))
+                {
+                    MessageBox.Show("O campo NOME deve conter apenas letras!");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtEndereco.Text))
+                {
+                    MessageBox.Show("O campo ENDEREÇO é obrigatório!");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtBairro.Text))
+                {
+                    MessageBox.Show("O campo BAIRRO é obrigatório!");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtCidade.Text))
+                {
+                    MessageBox.Show("O campo CIDADE é obrigatório!");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtEstado.Text) || txtEstado.Text.Length != 2)
+                {
+                    MessageBox.Show("O campo ESTADO deve conter 2 letras!");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtCep.Text) || !Regex.IsMatch(txtCep.Text, @"^\d{5}-\d{3}$"))
+                {
+                    MessageBox.Show("O campo CEP deve estar no formato 00000-000!");
+                    return;
+                }
 
+                if (string.IsNullOrWhiteSpace(txtTelefone.Text) || !Regex.IsMatch(txtTelefone.Text, @"^\(\d{2}\) \d{5}-\d{4}$"))
+                {
+                    MessageBox.Show("O campo TELEFONE deve estar no formato (00) 00000-0000!");
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(txtEmail.Text) || !Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                {
+                    MessageBox.Show("O campo EMAIL deve estar em um formato válido!");
+                    return;
+                }
+
+
+                Contato contato = new Contato();
+
+                contato.Nome = txtNome.Text;
+                contato.Rua = txtEndereco.Text;
+                contato.Bairro = txtBairro.Text;
+                contato.Cidade = txtCidade.Text;
+
+                string cepFormatado = Regex.Replace(txtCep.Text, @"\D", "");
+                contato.Cep = cepFormatado;
+                
+                contato.Estado = txtEstado.Text;
+
+                string telefoneFormatado = Regex.Replace(txtTelefone.Text, @"\D", "");
+                contato.Telefone = telefoneFormatado;
+
+                contato.Email = txtEmail.Text;
+
+                String strConexao = DadosConexao.StringDeConexao;
+                Conexao conexao = new Conexao(strConexao);
+                DALContato dal = new DALContato(conexao);
+
+                if (this.operacao == "inserir")
+                {
+                    dal.Incluir(contato);
+                    MessageBox.Show("O código gerado foi:" + contato.Codigo.ToString());
+
+                }
+                else
+                {
+                    contato.Codigo = Convert.ToInt32(txtCodigo.Text);
+                    dal.Alterar(contato);
+                    MessageBox.Show("Registro alterado com sucesso.");
+                }
+                this.AlteraBotoes(1);
+                this.LimpaCampos();
             }
-            else
+            catch (Exception erro)
             {
-                contato.Codigo = Convert.ToInt32(txtCodigo.Text);
-                dal.Alterar(contato);
-                MessageBox.Show("Registro alterado com sucesso.");
+                MessageBox.Show(erro.Message);
             }
-            this.AlteraBotoes(1);
-            this.LimpaCampos();
         }
+
+        private void txtTelefone_TextChanged(object sender, EventArgs e)
+        {
+            string numero = Regex.Replace(txtTelefone.Text, @"\D", ""); // Remove tudo que não for número
+
+            if (numero.Length > 11) numero = numero.Substring(0, 11); // Limita a 11 caracteres
+
+            if (numero.Length >= 2)
+            {
+                if (numero.Length <= 6)
+                    txtTelefone.Text = $"({numero.Substring(0, 2)}) {numero.Substring(2)}";
+                else if (numero.Length <= 10)
+                    txtTelefone.Text = $"({numero.Substring(0, 2)}) {numero.Substring(2, 4)}-{numero.Substring(6)}";
+                else
+                    txtTelefone.Text = $"({numero.Substring(0, 2)}) {numero.Substring(2, 5)}-{numero.Substring(7)}"; // Formato correto para 11 dígitos
+            }
+
+            txtTelefone.SelectionStart = txtTelefone.Text.Length; // Mantém o cursor no final
+        }
+
+
+        private void txtCep_TextChanged(object sender, EventArgs e)
+        {
+            string cep = Regex.Replace(txtCep.Text, @"\D", ""); // Remove caracteres não numéricos
+
+            if (cep.Length > 5)
+            {
+                txtCep.Text = cep.Insert(5, "-"); // Insere o hífen no formato 00000-000
+                txtCep.SelectionStart = txtCep.Text.Length; // Mantém o cursor no final
+            }
+        }
+
 
         private void btLocalizar_Click(object sender, EventArgs e)
         {
@@ -184,5 +295,6 @@ namespace Agenda
                 this.AlteraBotoes(1);
             }
         }
+
     }
 }
